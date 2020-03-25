@@ -63,7 +63,7 @@ state = {
 			add_manpower = 1005013
 			add_manpower = 1216655
 			buildings = {
-				industrial_complex = 19
+				industrial_complex = 15
 			}
 		}
 	}
