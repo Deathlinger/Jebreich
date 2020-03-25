@@ -1,0 +1,522 @@
+﻿2000.1.1 = {
+	capital = 180
+	oob = "UAE_2000"
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "UAE_2000_naval_mtg"
+		else = {
+			set_naval_oob = "UAE_2000_naval_legacy"
+		}
+	}
+	
+	set_convoys = 40
+	
+	set_country_flag = positive_fossil_fuel_industry
+	
+	add_ideas = {
+		#pop_050
+		widespread_corruption
+		gdp_9
+		sunni
+		uae_expat
+		al_jazeera_banned
+		cybercaliphate
+		youth_radicalization
+		muslim_brotherhood_crackdown
+
+		idea_gcc_member_state
+		LoAS_member	
+		stable_growth
+		defence_06
+		edu_04
+		health_04
+		social_06
+		bureau_02
+		police_03
+		#state_press
+		#underground_parties_only
+		#theocracy
+		draft_army
+		volunteer_women
+		rentier_state
+		export_economy
+		fossil_fuel_industry
+		wahabi_ulema
+		saudi_royal_family
+		#hybrid
+		#tax_cost_05
+	}
+	
+	set_technology = { 
+		legacy_doctrines = 1 
+		modern_blitzkrieg = 1 
+		forward_defense = 1 
+		encourage_nco_iniative = 1 
+		air_land_battle = 1
+
+		corvette_1 = 1
+		corvette_2 = 1
+		missile_corvette_1 = 1
+		missile_corvette_2 = 1 #Miray Jib
+		
+		frigate_1 = 1
+		
+		infantry_weapons = 1
+		command_control_equipment = 1
+		land_Drone_equipment = 1
+		Anti_tank_0 = 1
+		Heavy_Anti_tank_0 = 1
+		Anti_Air_0 = 1
+		combat_eng_equipment = 1
+		
+		Early_APC = 1
+		MBT_1 = 1
+		
+		IFV_1 = 1
+
+		APC_1 = 1
+
+		Rec_tank_0 = 1
+		
+		util_vehicle_0 = 1
+		
+		SP_arty_0 = 1 #Enigma
+
+		SP_Anti_Air_0 = 1
+		
+		artillery_0 = 1
+
+		
+		SP_R_arty_0 = 1 #Jobaria MCL
+		
+		SP_Anti_Air_0 = 1
+		
+		ENGI_MBT_1 = 1
+		
+		body_armor_1980 = 1
+		camouflage = 1
+		camouflage2 = 1
+	}
+	
+	#Influence system
+	init_influence = yes
+	set_variable = { domestic_influence_amount = 250 }
+	add_to_array = { influence_array = USA.id }
+	add_to_array = { influence_array_val = 49 }
+	add_to_array = { influence_array = ENG.id }
+	add_to_array = { influence_array_val = 31 }
+	add_to_array = { influence_array = FRA.id }
+	add_to_array = { influence_array_val = 40 }
+	add_to_array = { influence_array = SAU.id }
+	add_to_array = { influence_array_val = 70 }
+	add_to_array = { influence_array = CHI.id }
+	add_to_array = { influence_array_val = 5 }
+	add_to_array = { influence_array = RAJ.id }
+	add_to_array = { influence_array_val = 14 }
+	add_to_array = { influence_array = PAK.id }
+	add_to_array = { influence_array_val = 30 }
+	startup_influence = yes
+	
+	### Economy
+	set_variable = { var = debt value = 5 }
+	set_variable = { var = treasury value = 20 }
+	set_variable = { var = tax_rate value = 1 }
+	set_variable = { var = int_investments value = 0 }
+	#initial_money_setup = yes
+	
+	set_popularities = {
+		democratic = 10.0
+		communism = 5.0
+		fascism = 70.0
+		neutrality = 15.0
+		nationalist = 0.0
+	}
+	set_politics = {
+		
+		ruling_party = fascism
+		last_election = "1932.11.8"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	start_politics_input = yes
+
+	### Party Popularities
+	set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0 } #conservatism
+	set_variable = { party_pop_array^2 = 0 } #liberalism
+	set_variable = { party_pop_array^3 = 0 } #socialism
+	set_variable = { party_pop_array^4 = 0 } #Communist-State
+	set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0 } #Conservative
+	set_variable = { party_pop_array^7 = 0 } #Autocracy
+	set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	set_variable = { party_pop_array^10 = 1 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0 } #oligarchism
+	set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+	
+	### Ruling Party
+	add_to_array = { ruling_party = 10 }
+	
+	startup_politics = yes
+
+	create_country_leader = {
+		name = "Zayed bin Sultan Al Nahyan"
+		picture = "zayed_bin_sultan_al_nahyan.dds"
+		ideology = Kingdom
+		traits = {
+			king
+			salafist_Kingdom
+		}
+	}
+	
+	create_field_marshal = {
+		name = "Hamad Mohammed Al-Rumaithi"
+		picture = "Hamad_Mohammed_Al-Rumaithi.dds"
+		id = 67200
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+		name = "Gomaa Ahmed Al-Bawardi"
+		picture = "Gomaa_A_Bawardi.dds"
+		id = 67201
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Saleh Mohammed Al-Ameri"
+		picture = "Saleh_M_Ameri.dds"
+		id = 67202
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Ahmed Bin Tahnoon"
+		picture = "Ahmed_Tahnoon.dds"
+		id = 67203
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Issa Saif Al-Mazrouei"
+		picture = "Issa_S_Mazrouei.dds"
+		id = 67204
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Al Matrooshi Mourn"
+		picture = "Al_Matrooshi_Mourn.dds"
+		id = 67205
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Khalifa bin Nahila"
+		picture = "Khalifa_Nahila.dds"
+		id = 67206
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Mohammed Al Dhahiri"
+		picture = "Mohammed_Al_Dhahiri.dds"
+		id = 67207
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Abdul Qudous Abdul Razzaq"
+		picture = "Abdul_Qudous_Abdul_Razzaq.dds"
+		id = 67208
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Hamad Adil Al-Shamsi"
+		picture = "Hamad_A_AlShamsi.dds"
+		traits = { ranger }
+		id = 67209
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Mubarak bin Muhairoum"
+		picture = "Mubarak_Muhairoum.dds"
+		traits = { trickster }
+		id = 67210
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Mubarak Abdullah Al-Muhairi"
+		picture = "Al_Muhairi.dds"
+		traits = { bearer_of_artillery }
+		id = 67211
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Hamad Mohammed Thani Al-Rumaithi"
+		picture = "generals/Portrait_Hamad_Mohammed_Thani_Al_Rumaithi.dds"
+		traits = { }
+		id = 67213
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Ibrahim Nasser Al-Alawi"
+		picture = "generals/Portrait_Ibrahim_Nasser_Al_Alawi.dds"
+		traits = { }
+		id = 67214
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_navy_leader = {
+		name = "Ibrahim Salem Mohammed"
+		picture = "Ib_S_Mohammed.dds"
+		traits = { old_guard_navy superior_tactician }
+		id = 67212
+	}
+
+}
+2017.1.1 = {
+	capital = 180
+	oob = "UAE_2017"
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "UAE_2017_naval_mtg"
+		else = {
+			set_naval_oob = "UAE_2017_naval_legacy"
+		}
+	}
+	
+	set_convoys = 40
+	
+	#Nat focus
+	
+	
+	
+	
+	
+	
+	
+	set_country_flag = positive_fossil_fuel_industry
+	set_country_flag = Major_Importer_US_Arms #Trends-in-international-arms-transfers-2016.pdf
+
+	add_opinion_modifier = { target = PER modifier = hostile_status }
+	add_opinion_modifier = { target = SYR modifier = hostile_status }
+	add_opinion_modifier = { target = IRQ modifier = hostile_status }
+
+
+	add_opinion_modifier = { target = SOV modifier = Arabian_Peninsula_Russia_Economical_Relations }
+
+	add_ideas = {
+		#pop_050
+		widespread_corruption
+		gdp_9
+		sunni
+		uae_expat
+		al_jazeera_banned
+		cybercaliphate
+		youth_radicalization
+		muslim_brotherhood_crackdown
+		restoring_hope
+
+		idea_gcc_member_state
+		LoAS_member	
+		stable_growth
+		defence_06
+		edu_04
+		health_04
+		social_06
+		bureau_02
+		police_03
+		#state_press
+		#underground_parties_only
+		#theocracy
+		draft_army
+		volunteer_women
+		rentier_state
+		export_economy
+		fossil_fuel_industry
+		wahabi_ulema
+		saudi_royal_family
+		#hybrid
+		#tax_cost_05
+	}
+	
+	# Starting tech
+	set_technology = { 
+		legacy_doctrines = 1 
+		modern_blitzkrieg = 1 
+		forward_defense = 1 
+		encourage_nco_iniative = 1 
+		air_land_battle = 1
+
+		corvette_1 = 1
+		corvette_2 = 1
+		missile_corvette_1 = 1
+		missile_corvette_2 = 1 #Miray Jib
+		
+		frigate_1 = 1
+		
+		infantry_weapons = 1
+		command_control_equipment = 1
+		land_Drone_equipment = 1
+		Anti_tank_0 = 1
+		Heavy_Anti_tank_0 = 1
+		Anti_Air_0 = 1
+		combat_eng_equipment = 1
+		
+		Early_APC = 1
+		MBT_1 = 1
+		
+		IFV_1 = 1
+		IFV_2 = 1
+		IFV_3 = 1
+		IFV_4 = 1
+		IFV_5 = 1
+		IFV_6 = 1 #EDT Enigma
+
+		APC_1 = 1
+		APC_2 = 1
+		APC_3 = 1
+		APC_4 = 1
+		APC_5 = 1
+		APC_6 = 1 #Enigma APC
+
+		Rec_tank_0 = 1
+		
+		util_vehicle_0 = 1
+		util_vehicle_1 = 1
+		util_vehicle_2 = 1
+		util_vehicle_3 = 1
+		util_vehicle_4 = 1
+		util_vehicle_5 = 1 #Nimr
+		
+		SP_arty_0 = 1 #Enigma
+
+		SP_Anti_Air_0 = 1
+		
+		artillery_0 = 1
+
+		
+		SP_R_arty_0 = 1 #Jobaria MCL
+		
+		early_helicopter = 1
+		attack_helicopter1 = 1
+		transport_helicopter1 = 1
+		
+		SP_Anti_Air_0 = 1
+		
+		ENGI_MBT_1 = 1
+		
+		early_fighter = 1
+		MR_Fighter1 = 1
+		L_Strike_fighter1 = 1
+		
+		night_vision_1 = 1
+		night_vision_2 = 1
+		
+	}
+	
+	### Economy
+	set_variable = { var = debt value = 73 }
+	set_variable = { var = treasury value = 85 }
+	set_variable = { var = int_investments value = 1299 }
+	set_variable = { var = tax_rate value = 5 }
+	#initial_money_setup = yes
+	
+
+	create_country_leader = {
+		name = "Khalifa bin Zayed Al-Nahyan"
+		picture = "khalifa_bin_zayed_al_nahyan.dds"
+		ideology = Kingdom
+		traits = {
+			king
+			salafist_Kingdom
+			tech_savy
+			greedy
+			capable
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Baynunah-class"
+		type = missile_corvette_2
+		upgrades = { }
+	}
+}

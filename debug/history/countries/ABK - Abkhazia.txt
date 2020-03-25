@@ -1,0 +1,99 @@
+﻿
+	capital = 706
+	oob = "ABK_2017"
+	
+	set_convoys = 10
+	
+	set_technology = { 
+		legacy_doctrines = 1 
+		armoured_mass_assault = 1 
+		deep_echelon_advance = 1 
+		army_group_operational_freedom = 1 
+		massed_artillery = 1
+		
+		night_vision_1 = 1
+		
+		landing_craft = 1
+		
+		#For templates
+		infantry_weapons = 1
+		command_control_equipment = 1
+		Anti_tank_0 = 1
+		Heavy_Anti_tank_0 = 1
+		artillery_0 = 1
+		SP_R_arty_0 = 1
+		SP_arty_0 = 1
+		SP_Anti_Air_0 = 1
+		Anti_Air_0 = 1
+		Early_APC = 1
+		APC_1 = 1
+		IFV_1 = 1
+		MBT_1 = 1
+		util_vehicle_0 = 1
+		body_armor_1980 = 1
+	
+		night_vision_2 = 1
+		land_Drone_equipment = 1
+	} 
+	
+	create_country_leader = {
+		name = "Vladislav Ardzinba"
+		picture = "Vladislav_Ardzinba.dds"
+		ideology = Communist-State
+		traits = {
+			
+		}
+	}
+	create_field_marshal = {
+		name = "Vladimir Arshba"
+		picture = "generals/Vladimir_Arshba.dds"
+		id = 1
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	create_field_marshal = {
+		name = "Anatoly Khrulyov"
+		picture = "generals/Anatoly_Khrulyov.dds"
+		id = 3
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+
+	
+
+	set_popularities = {
+		communism = 13.0
+		radical_socialism = 0
+		social_democracy = 0
+		liberalism = 0
+		centrism = 0
+		democratic = 13.0
+		reactionary_autocracy = 54
+		nationalist = 20.0
+		fascism = 0.0
+		monarchist = 0.0
+		
+	}
+	set_politics = {
+		ruling_party = reactionary_autocracy
+		last_election = "2014.8.24"
+		election_frequency = "60"
+		elections_allowed = "yes"
+	}
+
+	create_country_leader = {
+		name = "Raul Khajimba"
+		picture = "ABK_Raul_Khajimba.dds"
+		ideology = Autocracy
+		traits = {
+			
+		}
+	}
+
+}

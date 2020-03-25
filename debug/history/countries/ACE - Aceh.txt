@@ -1,0 +1,46 @@
+﻿
+	capital = 622
+	oob = "ACE_2000"
+	set_convoys = 5
+	
+	set_technology = { 
+		legacy_doctrines = 1 
+		modern_blitzkrieg = 1 
+		forward_defense = 1 
+		encourage_nco_iniative = 1 
+		air_land_battle = 1
+		command_control_equipment = 1
+		infantry_weapons = 1
+		combat_eng_equipment = 1
+		Anti_tank_0 = 1
+		Anti_Air_0 = 1
+	}
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "2014.4.9"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+	set_popularities = {
+		communism = 0
+		radical_socialism = 0
+		social_democracy = 0
+		liberalism = 0
+		centrism = 0
+		democratic = 0
+		reactionary_autocracy = 100
+		nationalist = 0
+		fascism = 0
+		monarchist = 0
+		
+	}
+
+	create_country_leader = {
+		name = "Zini Abdullah"
+		picture = "zini_abdullah_aceh.dds"
+		ideology = Autocracy
+		traits = {
+			
+		}
+	}
+}

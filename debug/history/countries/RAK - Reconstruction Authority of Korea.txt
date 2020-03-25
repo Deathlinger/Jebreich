@@ -1,0 +1,42 @@
+﻿capital = 525
+
+
+
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = Reactionary_Autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Vanguard_Communism = 0
+	Radical_Socialism = 13
+	Social_Democracy = 12
+	Liberalism = 6
+	Centrism = 3
+	Conservatism = 6
+	Reactionary_Autocracy = 41
+	Populist_Nationalism = 17
+	Neofascism = 2
+}
+
+add_ideas = {
+	RAK_Corrupt_Officials_idea
+	RAK_Restricted_Rights_idea
+	RAK_International_Aid_idea
+	}
+
+create_country_leader = {
+	name = "Reconstruction Committee"
+	desc = ""
+	picture = "portrait_RAK_Reconstruction_Committee.dds"
+	expire = "1965.1.1"
+	ideology = Reactionary_Autocracy_subtype
+	traits = {
+		#
+	}
+}
+

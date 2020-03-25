@@ -1,0 +1,40 @@
+﻿capital = 361
+
+
+
+
+set_politics = {
+	ruling_party = Liberalism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Vanguard_Communism = 2
+	Radical_Socialism = 13
+	Social_Democracy = 15
+	Liberalism = 18
+	Centrism = 9
+	Conservatism = 18
+	Reactionary_Autocracy = 0
+	Populist_Nationalism = 15
+	Neofascism = 10
+}
+
+add_ideas = {
+	
+}
+
+
+
+
+create_country_leader = {
+	name = "Franklin Delano Roosevelt"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "Portrait_USA_Franklin_Roosevelt.dds"
+	expire = "1947.1.1"
+	ideology = Liberalism_subtype
+	traits = {
+		
+	}
+}

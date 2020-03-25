@@ -1,0 +1,42 @@
+﻿capital = 554
+
+
+set_convoys = 8
+
+set_politics = {
+	ruling_party = Populist_Nationalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	Vanguard_Communism = 3
+	Radical_Socialism = 18
+	Social_Democracy = 16
+	Liberalism = 4
+	Centrism = 0
+	Conservatism = 5
+	Reactionary_Autocracy = 19
+	Populist_Nationalism = 25
+	Neofascism = 10
+}
+ 
+
+add_ideas = {
+	SYR_Slow_Reconstruction_idea
+	SYR_Excessive_Repression_idea
+	SYR_The_Kurdish_Problem_idea
+	SYR_Russian_Iranian_Rivalry_idea
+	
+}
+
+create_country_leader = {
+	name = "Bashar Al Assad"
+	picture = "portrait_SYR_Bashar_Al_Assad.dds"
+	expire = "1965.1.1"
+	ideology = Populist_Nationalism_subtype
+	traits = {
+		#
+	}
+}
+

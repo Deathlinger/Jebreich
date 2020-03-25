@@ -1,0 +1,47 @@
+﻿	capital = 357
+	
+	set_convoys = 5
+
+	# Starting tech
+	set_technology = { 
+		legacy_doctrines = 1 
+		modern_blitzkrieg = 1 
+		forward_defense = 1 
+		encourage_nco_iniative = 1 
+		air_land_battle = 1
+		
+		#For Templates
+		infantry_weapons = 1
+		command_control_equipment = 1
+		Anti_tank_0 = 1
+		Anti_Air_0 = 1
+	}
+	
+	set_popularities = {
+		communism = 0
+		radical_socialism = 0
+		social_democracy = 0
+		liberalism = 0
+		centrism = 0
+		democratic = 0
+		reactionary_autocracy = 
+		nationalist = 100.0
+		fascism = 0.0
+		monarchist = 0.0
+	}
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "1999.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	create_country_leader = {
+		name = "Maj. Johnny Koroma"
+		picture = "johnny_koroma.dds"
+		ideology = Military_government
+		traits = {
+			
+		}
+	}
+}
